@@ -1,6 +1,8 @@
 import Contact from './components/Contact';
 
 import { createClient } from 'contentful';
+import Clients from './components/Clients';
+import Services from './components/Services';
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -8,10 +10,12 @@ const client = createClient({
 });
 
 export default async function Home() {
-  // const res = await client.getEntry('554j8fBbiwATrMGIvwZOSJ');
-  // console.log(res);
+  const services = await client.getEntry('2szV1MwD1vsVMhi6hueo7W');
+  const clients = await client.getEntries({ content_type: 'client' });
   return (
     <main className='pt-24 leading-relaxed'>
+      <Clients clients={clients} />
+      <Services services={services} />
       <Contact />
     </main>
   );

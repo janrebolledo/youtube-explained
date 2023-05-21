@@ -45,7 +45,7 @@ export default function Contact() {
         />
         <textarea
           name='message'
-          className='input w-full'
+          className='input w-full resize-none h-48'
           required
           placeholder='Message'
         ></textarea>
