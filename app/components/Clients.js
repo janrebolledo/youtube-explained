@@ -57,7 +57,7 @@ function Client({ client }) {
         width={image.fields.file.details.image.width}
         height={image.fields.file.details.image.height}
         alt={image.fields.file.fileName}
-        className='w-32 h-32 rounded-full'
+        className='w-1/3 aspect-square rounded-full'
       />
       <div className='flex flex-col gap-2'>
         <h2 className='font-semibold text-2xl'>{name}</h2>

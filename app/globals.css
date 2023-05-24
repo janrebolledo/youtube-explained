@@ -10,3 +10,9 @@
     @apply text-black text-xs w-max h-max px-8 py-3 border-black border-2 rounded-2xl bg-transparent;
   }
 }
+
+@media screen and (min-width: 768px) {
+  #header[data-visible='true'] {
+    transform: translateY(-6rem);
+  }
+}

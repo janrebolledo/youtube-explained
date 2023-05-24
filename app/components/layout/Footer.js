@@ -12,7 +12,7 @@ export default function Footer({ props }) {
   console.log(props.fields.image.fields.file);
   return (
     <footer className='bg-[#F8E6EB] p-6 flex flex-col items-center'>
-      <div className='flex justify-between items-center w-full'>
+      <div className='flex flex-col lg:flex-row justify-between items-center w-full gap-8'>
         <div className='flex items-center gap-8'>
           <Image
             src={'https:' + image.fields.file.url}
@@ -23,7 +23,7 @@ export default function Footer({ props }) {
           />
           <h3>Julian Hicks</h3>
         </div>
-        <div className='font-medium flex gap-14'>
+        <div className='font-medium flex flex-col items-center lg:flex-row gap-14'>
           <Link href='/'>Home</Link>
           <Link href='#work'>Previous Work</Link>
           <Link href='#services'>Services</Link>
@@ -45,7 +45,7 @@ export default function Footer({ props }) {
           </Link>
         </div>
       </div>
-      <small className='text-xs text-neutral-500 text-center'>
+      <small className='text-xs text-neutral-500 text-center mt-8'>
         {copyright}
       </small>
     </footer>

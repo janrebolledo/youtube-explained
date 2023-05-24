@@ -1,9 +1,35 @@
+'use client';
+import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import Menu from '../../../public/icons/menu.svg';
 
 export default function Header() {
+  let lastScroll = 0;
+
+  useEffect(() => {
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll <= lastScroll) {
+        header.dataset.visible = false;
+      } else {
+        header.dataset.visible = true;
+      }
+      // when at the top of the page, the header keeps going away
+      if (currentScroll < 15) {
+        header.dataset.visible = true;
+      }
+      lastScroll = currentScroll;
+    });
+  }, []);
+
   return (
-    <header className='fixed w-full h-24 px-6 flex items-center justify-between top-0 left-0 right-0 bg-gradient-to-b from-blush-light to-blush'>
-      <div className='flex gap-8'>
+    <header
+      id='header'
+      className='fixed w-auto md:w-full h-24 px-6 flex items-center justify-between md:top-0 left-6 md:left-0 right-6 md:right-0 bottom-12 md:bottom-auto bg-gradient-to-b from-blush-light/50 to-blush/50 backdrop-blur-lg md:from-blush-light md:to-blush md:border-none border-2 border-solid border-white rounded-2xl md:rounded-none z-100 transition-all'
+    >
+      <div className='hidden md:flex gap-8'>
         <Link href='/' className='btn-primary'>
           Home
         </Link>
@@ -14,7 +40,7 @@ export default function Header() {
       <Link href='/' className='font-bold text-xl text-white'>
         YouTube Explained
       </Link>
-      <div className='flex gap-8'>
+      <div className='hidden md:flex gap-8'>
         <Link href='/' className='btn-primary'>
           Previous Work
         </Link>
@@ -22,6 +48,7 @@ export default function Header() {
           Contact &rarr;
         </Link>
       </div>
+      <Image src={Menu} width={32} height={32} className='block md:hidden' />
     </header>
   );
 }
