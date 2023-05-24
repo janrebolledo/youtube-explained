@@ -12,7 +12,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #header[data-visible='true'] {
+  #header[data-visible='false'] {
     transform: translateY(-6rem);
   }
 }

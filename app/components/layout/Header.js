@@ -12,12 +12,12 @@ export default function Header() {
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll <= lastScroll) {
-        header.dataset.visible = false;
-      } else {
         header.dataset.visible = true;
+      } else {
+        header.dataset.visible = false;
       }
       // when at the top of the page, the header keeps going away
-      if (currentScroll < 15) {
+      if (currentScroll < 96) {
         header.dataset.visible = true;
       }
       lastScroll = currentScroll;
