@@ -5,7 +5,7 @@ export default function Services({ services }) {
   console.log();
   return (
     <section className='p-6'>
-      <h1 className='border-2 border-solid border-blush rounded-3xl px-8 py-3 text-4xl font-medium w-max h-max mb-20'>
+      <h1 className='border-2 border-solid border-blush rounded-3xl px-8 py-3 my-20 text-4xl font-medium w-max h-max'>
         Services
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
