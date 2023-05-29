@@ -1,9 +1,25 @@
+'use client';
+import { motion } from 'framer-motion';
+
 export default function Contact() {
   return (
-    <section className="p-6 grid grid-cols-1 md:grid-cols-2 gap-5 bg-[url('/gradient-2.svg')] bg-no-repeat bg-cover">
+    <section
+      id='contact'
+      className="p-6 grid grid-cols-1 md:grid-cols-2 gap-5 bg-[url('/gradient-2.svg')] bg-no-repeat bg-cover"
+    >
       <div>
-        <h1 className='font-semibold text-5xl'>Work with us</h1>
-        <p className='lg:w-1/2'>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className='font-semibold text-5xl'
+        >
+          Work with us
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className='lg:w-1/2'
+        >
           Reach out via{' '}
           <a
             rel='noopener noreferrer'
@@ -15,7 +31,7 @@ export default function Contact() {
           or fill out this form with any inquiries. Please include as many
           details as possible like content direction, audience size, & budget.
           We look forward to work with you.
-        </p>
+        </motion.p>
       </div>
       <form
         name='Contact'

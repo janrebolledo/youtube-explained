@@ -11,8 +11,14 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  #header[data-visible='false'] {
-    transform: translateY(-6rem);
-  }
+#header[data-visible='false'] {
+  transform: translateY(-6rem);
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    125.91% 100% at 50% 100%,
+    #ef434c 0%,
+    #f8e6eb 100%
+  );
 }

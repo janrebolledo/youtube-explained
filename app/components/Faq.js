@@ -1,3 +1,6 @@
+'use client';
+import { motion } from 'framer-motion';
+
 export default function Faq({ faq }) {
   const {
     faqDescription,
@@ -12,12 +15,12 @@ export default function Faq({ faq }) {
   } = faq.fields;
   return (
     <section className='grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-20'>
-      <div>
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <h1 className='font-semibold text-2xl'>Frequently Asked Questions</h1>
         <p className='lg:w-1/2'>{faqDescription}</p>
-      </div>
+      </motion.div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-16'>
-        <div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <h3 className='flex flex-row items-center gap-4 font-semibold mb-4'>
             <span className='text-[10px] p-3 rounded-lg bg-blush text-white'>
               01.
@@ -25,8 +28,8 @@ export default function Faq({ faq }) {
             {question1}
           </h3>
           <p>{answer1}</p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <h3 className='flex flex-row items-center gap-4 font-semibold mb-4'>
             <span className='text-[10px] p-3 rounded-lg bg-blush text-white'>
               02.
@@ -34,8 +37,8 @@ export default function Faq({ faq }) {
             {question2}
           </h3>
           <p>{answer2}</p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <h3 className='flex flex-row items-center gap-4 font-semibold mb-4'>
             <span className='text-[10px] p-3 rounded-lg bg-blush text-white'>
               03.
@@ -43,8 +46,8 @@ export default function Faq({ faq }) {
             {question3}
           </h3>
           <p>{answer3}</p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
           <h3 className='flex flex-row items-center gap-4 font-semibold mb-4'>
             <span className='text-[10px] p-3 rounded-lg bg-blush text-white'>
               04.
@@ -52,7 +55,7 @@ export default function Faq({ faq }) {
             {question4}
           </h3>
           <p>{answer4}</p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

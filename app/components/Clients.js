@@ -10,7 +10,10 @@ import './carousel.css';
 
 export default function Clients({ clients }) {
   return (
-    <section className="bg-[url('/gradient.png')] bg-no-repeat bg-cover px-6 py-12">
+    <section
+      id='work'
+      className="bg-[url('/gradient.png')] bg-no-repeat bg-cover px-6 py-12"
+    >
       <h2 className='font-semibold text-2xl mb-8 text-white'>
         Notable Clients
       </h2>

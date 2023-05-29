@@ -9,7 +9,6 @@ import Discord from '../../../public/icons/discord.svg';
 export default function Footer({ props }) {
   const { image, copyright, discord, instagram, linkedIn, twitter } =
     props.fields;
-  console.log(props.fields.image.fields.file);
   return (
     <footer className='bg-[#F8E6EB] p-6 flex flex-col items-center'>
       <div className='flex flex-col lg:flex-row justify-between items-center w-full gap-8'>
