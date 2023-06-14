@@ -7,10 +7,10 @@ export default function Services({ services }) {
     <motion.section
       initial={{ translateY: '300px' }}
       whileInView={{ translateY: '0px' }}
-      className='p-6'
+      className='p-6 py-12'
       id='services'
     >
-      <h1 className='border-2 border-solid border-blush rounded-3xl px-8 py-3 my-20 text-4xl font-medium w-max h-max'>
+      <h1 className='border-2 border-solid border-black rounded-3xl px-8 py-3 mb-4 text-4xl font-medium w-max h-max'>
         Services
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>

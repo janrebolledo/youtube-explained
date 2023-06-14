@@ -10,11 +10,8 @@ import './carousel.css';
 
 export default function Clients({ clients }) {
   return (
-    <section
-      id='work'
-      className="bg-[url('/gradient.png')] bg-no-repeat bg-cover px-6 py-12"
-    >
-      <h2 className='font-semibold text-2xl mb-8 text-white'>
+    <section id='work' className='px-6 py-12 bg-blush'>
+      <h2 className='border-2 border-solid border-black bg-white rounded-3xl px-8 py-3 mb-8 text-4xl font-medium w-max h-max'>
         Notable Clients
       </h2>
       <div>
@@ -40,7 +37,7 @@ export default function Clients({ clients }) {
             },
           }}
         >
-          {clients.items.map((client, index) => (
+          {clients.fields.clients.map((client, index) => (
             <SwiperSlide key={index}>
               <Client client={client} />
             </SwiperSlide>
@@ -54,7 +51,7 @@ export default function Clients({ clients }) {
 function Client({ client }) {
   const { name, image, socialProof, linkedWebsite, link } = client.fields;
   return (
-    <div className='rounded-3xl border-solid border-2 border-white p-9 text-white flex flex-row items-center justify-center gap-8 w-full h-56 bg-gradient-to-tr from-blush to-red-500'>
+    <div className='rounded-3xl border-solid border-2 border-black p-9 flex flex-row items-center justify-center gap-8 w-full h-56 bg-gradient-to-b from-white to-gray-200'>
       <Image
         src={'https:' + image.fields.file.url}
         width={image.fields.file.details.image.width}
@@ -65,7 +62,7 @@ function Client({ client }) {
       <div className='flex flex-col gap-2'>
         <h2 className='font-semibold text-2xl'>{name}</h2>
         <p>{socialProof}</p>
-        <Link href={link} className='btn-primary w-full'>
+        <Link href={link} className='btn-sku border-black w-full'>
           Visit on {linkedWebsite} ↗
         </Link>
       </div>

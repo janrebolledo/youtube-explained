@@ -13,7 +13,7 @@ const client = createClient({
 
 export default async function Home() {
   const landing = await client.getEntry('6L7M9KrfiFl7mmMEczDnu3');
-  const clients = await client.getEntries({ content_type: 'client' });
+  const clients = await client.getEntry('2G6VmNdqjBnKrH9oaJhUBh');
   const services = await client.getEntry('2szV1MwD1vsVMhi6hueo7W');
   const faq = await client.getEntry('4DQnY4tN2TOq4f3TAcI0lk');
   return (

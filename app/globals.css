@@ -4,15 +4,24 @@
 
 @layer components {
   .btn-primary {
-    @apply text-white text-xs w-max h-max px-8 py-3 border-2 rounded-2xl;
+    @apply text-white text-xs w-max h-max px-8 py-3 border-2 rounded-2xl font-bold;
+  }
+  .btn-sku {
+    @apply btn-primary bg-gradient-to-t from-blush to-red-500 border-white/30;
   }
   .input {
     @apply text-black text-xs w-max h-max px-8 py-3 border-black border-2 rounded-2xl bg-transparent;
   }
 }
 
-#header[data-visible='false'] {
+#header[data-visible='false'][data-modal-open='false'] {
   transform: translateY(-6rem);
+}
+
+@media (min-width: 768px) {
+  #header[data-visible='false'] {
+    transform: translateY(-6rem);
+  }
 }
 
 .radial-gradient {

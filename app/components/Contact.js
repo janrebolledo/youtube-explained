@@ -13,7 +13,7 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           className='font-semibold text-5xl'
         >
-          Work with us
+          Work with Julian
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -29,8 +29,8 @@ export default function Contact() {
             email
           </a>{' '}
           or fill out this form with any inquiries. Please include as many
-          details as possible like content direction, audience size, & budget.
-          We look forward to work with you.
+          details as possible like content direction, audience size, & budget. I
+          look forward to working with you.
         </motion.p>
       </div>
       <form
@@ -65,7 +65,7 @@ export default function Contact() {
           required
           placeholder='Message'
         ></textarea>
-        <button type='submit' className='input'>
+        <button type='submit' className='btn-sku text-white'>
           Send
         </button>
       </form>

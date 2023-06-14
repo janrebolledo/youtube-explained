@@ -20,10 +20,7 @@ export default function ServiceCard({ service }) {
         <h2 className='text-3xl font-semibold'>{service.fields.title}</h2>
         <p>{service.fields.description}</p>
       </div>
-      <Link
-        href={service.fields.link || '/'}
-        className='btn-primary border-blush bg-blush'
-      >
+      <Link href={service.fields.link || '/'} className='btn-sku text-base'>
         Learn more &rarr;
       </Link>
     </motion.article>

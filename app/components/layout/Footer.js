@@ -20,7 +20,7 @@ export default function Footer({ props }) {
             className='rounded-full w-16'
             alt='Image of Julian Hicks'
           />
-          <h3>Julian Hicks</h3>
+          <h3 className='font-bold'>Julian Hicks</h3>
         </div>
         <div className='font-medium flex flex-col items-center lg:flex-row gap-14'>
           <Link href='/'>Home</Link>
