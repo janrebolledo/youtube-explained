@@ -42,7 +42,7 @@ export default function Landing({ landing }) {
     <section>
       <div className='grid grid-cols-1 lg:grid-cols-2 p-6 items-center gap-8 min-h-[60vh]'>
         <div className='flex flex-col gap-4'>
-          <h2 className='font-semibold text-2xl'>YouTube Explained</h2>
+          <h2 className='font-semibold text-2xl'>Julian Hicks</h2>
           <h1 className='text-4xl'>{heading}</h1>
           <Link
             href='/'

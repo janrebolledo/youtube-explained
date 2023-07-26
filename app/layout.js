@@ -13,11 +13,11 @@ const client = createClient({
 });
 
 export const metadata = {
-  title: 'YouTube Explained – Julian Hicks',
+  title: 'Julian Hicks',
   description:
     "I'm Julian Hicks, The YouTube Guy. I help creators & brands elevate their content and revenue with creativity, strategy & analytics.",
   openGraph: {
-    title: 'YouTube Explained – Julian Hicks',
+    title: 'Julian Hicks',
     description:
       "I'm Julian Hicks, The YouTube Guy. I help creators & brands elevate their content and revenue with creativity, strategy & analytics.",
 

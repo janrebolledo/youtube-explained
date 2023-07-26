@@ -51,7 +51,7 @@ export default function Header() {
         </Link>
       </div>
       <Link href='/' className='font-bold text-xl text-white'>
-        YouTube Explained
+        Julian Hicks
       </Link>
       <div className='hidden md:flex gap-8'>
         <Link
