@@ -66,10 +66,18 @@ export default function Header() {
       </div>
       {menuState && (
         <nav className='absolute w-full text-white top-24 left-0 right-0 bottom-0 h-[calc(100dvh-6rem)] bg-blush p-6 font-bold text-2xl flex md:hidden flex-col gap-8 headerNav'>
-          <Link href='/'>Home</Link>
-          <a href='/#services'>Services</a>
-          <a href='/#work'>Previous Work</a>
-          <a href='/#contact'>Contact &rarr;</a>
+          <Link href='/' onClick={() => setMenuState(false)}>
+            Home
+          </Link>
+          <a href='/#services' onClick={() => setMenuState(false)}>
+            Services
+          </a>
+          <a href='/#work' onClick={() => setMenuState(false)}>
+            Previous Work
+          </a>
+          <a href='/#contact' onClick={() => setMenuState(false)}>
+            Contact &rarr;
+          </a>
         </nav>
       )}
       <Image

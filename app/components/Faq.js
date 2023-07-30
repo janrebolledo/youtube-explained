@@ -14,7 +14,10 @@ export default function Faq({ faq }) {
     answer4,
   } = faq.fields;
   return (
-    <section className='grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-20'>
+    <section
+      id='faq'
+      className='grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-20'
+    >
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <h1 className='font-semibold text-2xl'>Frequently Asked Questions</h1>
         <p className='lg:w-1/2'>{faqDescription}</p>
