@@ -1,5 +1,6 @@
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
+import Script from 'next/script';
 import './globals.css';
 import { Inter } from 'next/font/google';
 
@@ -39,14 +40,14 @@ export default async function RootLayout({ children }) {
         <Header />
         {children}
         <Footer props={footer} />
-        <script
+        <Script
           data-host='https://app.microanalytics.io/'
           data-dnt='false'
           src='https://app.microanalytics.io/js/script.js'
           id='ZwSg9rf6GA'
           async
           defer
-        ></script>
+        ></Script>
       </body>
     </html>
   );
