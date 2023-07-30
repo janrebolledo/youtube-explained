@@ -70,9 +70,9 @@ export default function Header() {
       {menuState && (
         <nav className='absolute w-full text-white top-24 left-0 right-0 bottom-0 h-[calc(100dvh-6rem)] bg-blush p-6 font-bold text-2xl flex md:hidden flex-col gap-8 headerNav'>
           <Link href='/'>Home</Link>
-          <Link href='/'>Services</Link>
-          <Link href='/'>Previous Work</Link>
-          <Link href='/'>Contact &rarr;</Link>
+          <Link href='/#services'>Services</Link>
+          <Link href='/#work'>Previous Work</Link>
+          <Link href='/#contact'>Contact &rarr;</Link>
         </nav>
       )}
       <Image

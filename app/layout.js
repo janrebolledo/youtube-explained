@@ -39,6 +39,14 @@ export default async function RootLayout({ children }) {
         <Header />
         {children}
         <Footer props={footer} />
+        <script
+          data-host='https://app.microanalytics.io/'
+          data-dnt='false'
+          src='https://app.microanalytics.io/js/script.js'
+          id='ZwSg9rf6GA'
+          async
+          defer
+        ></script>
       </body>
     </html>
   );
