@@ -10,17 +10,20 @@ import './carousel.css';
 
 export default function Clients({ clients }) {
   return (
-    <section id='work' className='px-6 py-12 bg-blush'>
-      <h2 className='border-2 border-solid border-black bg-white rounded-3xl px-8 py-3 mb-8 text-4xl font-medium w-max h-max'>
-        Notable Clients
-      </h2>
+    <section id='work' className='py-12 bg-blush'>
+      <div className='px-6'>
+        <h2 className='border-2 border-solid border-black bg-white rounded-3xl px-8 py-3 mb-8 text-4xl font-medium w-max h-max'>
+          Notable Clients
+        </h2>
+      </div>
       <div>
         <Swiper
           spaceBetween={20}
           autoplay={{
-            delay: 3000,
+            delay: 0,
             disableOnInteraction: false,
           }}
+          speed={5500}
           loop={true}
           grabCursor={true}
           modules={[Autoplay]}

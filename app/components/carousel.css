@@ -2,10 +2,14 @@
   z-index: 0;
 }
 
-.swiper-slide {
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* .swiper-slide {
   opacity: 0;
   transition: opacity;
-  transition-duration: 0.8s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -30,4 +34,4 @@
   .swiper-slide-next + .swiper-slide + .swiper-slide {
     opacity: 1 !important;
   }
-}
+} */
