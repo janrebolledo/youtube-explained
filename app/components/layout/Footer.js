@@ -24,10 +24,10 @@ export default function Footer({ props }) {
         </div>
         <div className='font-medium flex flex-col items-center lg:flex-row gap-14'>
           <Link href='/'>Home</Link>
-          <Link href='#work'>Previous Work</Link>
-          <Link href='#services'>Services</Link>
-          <Link href='#contact'>Contact</Link>
-          <Link href='#faq'>FAQ</Link>
+          <a href='#work'>Previous Work</a>
+          <a href='#services'>Services</a>
+          <a href='#contact'>Contact</a>
+          <a href='#faq'>FAQ</a>
         </div>
         <div className='flex gap-8'>
           <Link href={instagram}>

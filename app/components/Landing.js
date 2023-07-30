@@ -44,12 +44,12 @@ export default function Landing({ landing }) {
         <div className='flex flex-col gap-4'>
           <h2 className='font-semibold text-2xl'>Julian Hicks</h2>
           <h1 className='text-4xl'>{heading}</h1>
-          <Link
-            href='/'
+          <a
+            href='#contact'
             className='btn-primary text-base bg-gradient-to-t from-blush to-red-500 border-white/30'
           >
             {buttonText}
-          </Link>
+          </a>
         </div>
         <div className='flex items-center justify-center'>
           <Image

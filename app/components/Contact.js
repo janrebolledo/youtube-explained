@@ -32,7 +32,7 @@ export default function Contact({ props }) {
             Reach out via{' '}
             <a
               rel='noopener noreferrer'
-              href='mailto:YTExplainedTeam@Gmail.com'
+              href='mailto:contact@youtubeexplained.com'
               className='underline'
             >
               email

@@ -17,7 +17,6 @@ export default async function Home() {
   const services = await client.getEntry('2szV1MwD1vsVMhi6hueo7W');
   const faq = await client.getEntry('4DQnY4tN2TOq4f3TAcI0lk');
   const footer = await client.getEntry('554j8fBbiwATrMGIvwZOSJ');
-  console.log(footer);
   return (
     <main className='pt-24 leading-relaxed'>
       <Landing landing={landing} />

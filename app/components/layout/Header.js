@@ -43,36 +43,33 @@ export default function Header() {
         <Link href='/' className='btn-primary bg-white text-blush border-none'>
           Home
         </Link>
-        <Link
+        <a
           href='#services'
           className='btn-primary bg-white text-blush border-none'
         >
           Services
-        </Link>
+        </a>
       </div>
       <Link href='/' className='font-bold text-xl text-white'>
         Julian Hicks
       </Link>
       <div className='hidden md:flex gap-8'>
-        <Link
-          href='#work'
-          className='btn-primary bg-white text-blush border-none'
-        >
+        <a href='#work' className='btn-primary bg-white text-blush border-none'>
           Previous Work
-        </Link>
-        <Link
+        </a>
+        <a
           href='#contact'
           className='btn-primary bg-white text-blush border-none'
         >
           Contact &rarr;
-        </Link>
+        </a>
       </div>
       {menuState && (
         <nav className='absolute w-full text-white top-24 left-0 right-0 bottom-0 h-[calc(100dvh-6rem)] bg-blush p-6 font-bold text-2xl flex md:hidden flex-col gap-8 headerNav'>
           <Link href='/'>Home</Link>
-          <Link href='/#services'>Services</Link>
-          <Link href='/#work'>Previous Work</Link>
-          <Link href='/#contact'>Contact &rarr;</Link>
+          <a href='/#services'>Services</a>
+          <a href='/#work'>Previous Work</a>
+          <a href='/#contact'>Contact &rarr;</a>
         </nav>
       )}
       <Image
