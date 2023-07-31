@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function ServiceCard({ service }) {
@@ -20,9 +19,9 @@ export default function ServiceCard({ service }) {
         <h2 className='text-3xl font-semibold'>{service.fields.title}</h2>
         <p>{service.fields.description}</p>
       </div>
-      <Link href={service.fields.link || '/'} className='btn-sku text-base'>
+      <a href={service.fields.link || '/'} className='btn-sku text-base'>
         Learn more &rarr;
-      </Link>
+      </a>
     </motion.article>
   );
 }
