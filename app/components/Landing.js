@@ -45,7 +45,7 @@ export default function Landing({ landing }) {
           <h2 className='font-semibold text-2xl'>Julian Hicks</h2>
           <h1 className='text-4xl'>{heading}</h1>
           <a
-            href='#contact'
+            href='#services'
             className='btn-primary text-base bg-gradient-to-t from-blush to-red-500 border-white/30'
           >
             {buttonText}
